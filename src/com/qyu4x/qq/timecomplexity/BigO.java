@@ -7,6 +7,19 @@ public class BigO {
         return x * y;
     }
 
+    // O(log n) -> good than 0(n) , sample log2^8 = ?, base always 2 in cs
+    // 2x = 8
+    // 2x = 2 pow ? = 8
+    // 2 pow 3 so x = 3
+    // 2 log 3 = 8
+    public Integer OlogN(Integer n) {
+        if (n == 0) {
+            return n;
+        }
+        n = Math.floorDiv(n, 2); // level 1, 2 , and 3 recursion, loop 4 times
+        return OlogN(n);
+    }
+
     // 0(N), linear -> Good, sample 4^1 = 4
     public Integer ON(Integer number) {
         Integer result = 0;
@@ -16,6 +29,8 @@ public class BigO {
         return result;
 
     }
+
+    // 0 (n log n) -> comming soon, better than O(n^2)
 
     // O(n^2), linear ->  not so good (matrix), sample 4^2 = 16
     public Integer ONpow(Integer counter) {
@@ -42,17 +57,5 @@ public class BigO {
         return result;
     }
 
-    // O(log n) -> good than 0(n) , sample log2^8 = ?, base always 2 in cs
-    // 2x = 8
-    // 2x = 2 pow ? = 8
-    // 2 pow 3 so x = 3
-    // 2 log 3 = 8
-    public Integer OlogN(Integer n) {
-        if (n == 0) {
-            return n;
-        }
-        n = Math.floorDiv(n, 2); // level 1, 2 , and 3 recursion, loop 4 times
-        return OlogN(n);
-    }
 
 }
