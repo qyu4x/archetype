@@ -42,7 +42,7 @@ public class BigO {
         return result;
     }
 
-    // O(log n) -> bad , sample log2^8 = ?, base always 2 in cs
+    // O(log n) -> good than 0(n) , sample log2^8 = ?, base always 2 in cs
     // 2x = 8
     // 2x = 2 pow ? = 8
     // 2 pow 3 so x = 3
