@@ -31,6 +31,17 @@ public class BigO {
     }
 
     // 0 (n log n) -> comming soon, better than O(n^2)
+    public Integer ONlogN(Integer number) {
+        Integer  y = number;
+        while(number > 1) {
+            number = Math.floorDiv(number, 2);
+            for (int i = 1; i < y; i++) {
+                System.out.println(i);
+            }
+        }
+
+        return ONlogN(number);
+    }
 
     // O(n^2), linear ->  not so good (matrix), sample 4^2 = 16
     public Integer ONpow(Integer counter) {
@@ -56,6 +67,4 @@ public class BigO {
         }
         return result;
     }
-
-
 }
