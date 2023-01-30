@@ -35,12 +35,12 @@ public class BigO {
         Integer  y = number;
         while(number > 1) {
             number = Math.floorDiv(number, 2);
-            for (int i = 1; i < y; i++) {
+            for (int i = 1; i < y; i++) { // O (n)
                 System.out.println(i);
             }
         }
 
-        return ONlogN(number);
+        return ONlogN(number); // log n
     }
 
     // O(n^2), linear ->  not so good (matrix), sample 4^2 = 16
