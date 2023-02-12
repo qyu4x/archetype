@@ -1,4 +1,4 @@
-package com.qyu4x.qq.algorithm;
+package com.qyu4x.qq.algorithm.sort;
 
 import java.util.Arrays;
 
