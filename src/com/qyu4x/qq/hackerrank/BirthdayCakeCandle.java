@@ -19,7 +19,6 @@ class ResultBirthdayCakeCandle {
             Collections.swap(candles, j+1, candles.indexOf(k));
         }
 
-        // Collections.sort(candles);
 
         int r = 0;
         for (int i = candles.size()-1; i >= 0; i--) {
