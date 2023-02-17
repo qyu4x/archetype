@@ -19,7 +19,6 @@ class Result {
         int c =  a - b;
         return c < 0 ? c * -1: c;
     }
-
 }
 
 public class DiagonalDifference {
