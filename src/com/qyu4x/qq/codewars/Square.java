@@ -22,7 +22,6 @@ class ResultSequare {
                 }
             }
         }
-
         return v;
     }
 
